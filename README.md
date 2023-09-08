@@ -20,4 +20,4 @@ You may work on programming problems with others, but submitted code must be you
 - [jupyter](https://jupyter.org/) notebook interfaces for Python, Julia, and other applications.
 - [Google Colab](https://colab.research.google.com/), notebooks available if you have a Google Drive account.
 
-(c) 2022, Department of Physics and Astronomy, University of Rochester
+(c) 2022-2023, Department of Physics and Astronomy, University of Rochester
