@@ -2,7 +2,7 @@ name: Weekly Tasks
 on:
   schedule:
     # Scheduled time in UTC (19:15 UTC / 15:15 ET)
-    - cron: 45 19 * * 4
+    - cron: 57 19 * * 4
 
 jobs:
   create_issue:
