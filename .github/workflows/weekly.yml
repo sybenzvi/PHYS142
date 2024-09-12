@@ -2,7 +2,7 @@ name: Weekly Tasks
 on:
   schedule:
     # Scheduled time in UTC (19:15 UTC / 15:15 ET)
-    - cron: 57 19 * * 4
+    - cron: 2 20 * * 4
 
 jobs:
   create_issue:
@@ -11,6 +11,9 @@ jobs:
     permissions:
       issues: write
     steps:
+      - name: Get current date
+        id: date
+        run: echo "::set-output name=date::$(date +'%Y-%m-%d')"
       - name: Create weekly tasks issue
         run: |
           if [[ $CLOSE_PREVIOUS == true ]]; then
@@ -34,7 +37,7 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GH_REPO: ${{ github.repository }}
-          TITLE: Weekly tasks
+          TITLE: Weekly tasks for ${{ steps.date.outputs.date }}
           ASSIGNEES: sybenzvi
           LABELS: weekly tasks
           BODY: |
