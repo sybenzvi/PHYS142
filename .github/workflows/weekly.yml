@@ -2,7 +2,7 @@ name: Weekly Tasks
 on:
   schedule:
     # Scheduled time in UTC (19:15 UTC / 15:15 ET)
-    - cron: 24 20 * * 4
+    - cron: 35 20 * * 4
 
 jobs:
   create_issue:
@@ -39,7 +39,7 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GH_REPO: ${{ github.repository }}
           # TITLE: Weekly tasks for ${{ steps.date.outputs.date }}
-          TITLE: Weekly tasks for ${CURRENT_WEEK}
+          TITLE: Weekly tasks for $CURRENT_WEEK
           ASSIGNEES: sybenzvi
           LABELS: weekly tasks
           BODY: |
