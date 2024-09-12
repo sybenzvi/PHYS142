@@ -39,7 +39,7 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GH_REPO: ${{ github.repository }}
           # TITLE: Weekly tasks for ${{ steps.date.outputs.date }}
-          TITLE: Weekly tasks for ${{ env.THEWEEK}}
+          TITLE: Weekly tasks for ${{ env.THEWEEK }}
           ASSIGNEES: sybenzvi
           LABELS: weekly tasks
           BODY: |
