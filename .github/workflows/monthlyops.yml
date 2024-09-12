@@ -52,6 +52,6 @@ jobs:
             - [ ] Update thresholds for QA metrics used by Nightwatch
             - [ ] Review open Nightwatch and desisurveyops tickets
 
-            - [Work this month](https://github.com/orgs/desihub/projects/52)
+            [Monthly Survey Ops](https://github.com/orgs/desihub/projects/52)
           PINNED: false
           CLOSE_PREVIOUS: false
